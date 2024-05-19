@@ -1,1 +1,1 @@
-# lab10syc
+# lab 10, variant 2
