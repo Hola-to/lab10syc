@@ -14,7 +14,7 @@ conference::conference(size_t id, char first_name, char last_name, char patronym
 conference::conference():name(first_name, last_name, patronymic), theme(topic) {}
 void conference::print_conference()
 {
-	std::cout << first_name;
+	printf("%u %c %c %c %c", id, first_name, last_name, patronymic, topic);
 }
 void conference::get_conference(size_t id, char first_name, char last_name, char patronymic, date start, date end, char topic)
 {
