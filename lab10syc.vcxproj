@@ -135,6 +135,7 @@
   <ItemGroup>
     <ClCompile Include="conference.cpp" />
     <ClCompile Include="date.cpp" />
+    <ClCompile Include="filter.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="main_header.h" />
     <ClCompile Include="name.cpp" />

@@ -7,7 +7,7 @@ conference::conference(size_t id, std::string first_name, std::string last_name,
 	this->start = start;
 	this->end = end;
 }
-conference::conference():name(first_name, last_name, patronymic), theme(topic) {}
+conference::conference() :name(first_name, last_name, patronymic), theme(topic) { }
 void conference::print_conference()
 {
 	cout << first_name << " " << last_name << " " << patronymic << " " << start.hours << ":" << start.minutes << " " << end.hours << ":" << end.minutes << " " << topic << endl;
@@ -20,4 +20,8 @@ void conference::get_conference(std::string first_name, std::string last_name, s
 	this->start = start;
 	this->end = end;
 	this->topic = topic;
+}
+unsigned conference::get_minute()
+{
+	return (end.hours * 60 + end.minutes) - (start.hours * 60 + start.minutes);
 }

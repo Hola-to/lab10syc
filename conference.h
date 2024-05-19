@@ -15,5 +15,6 @@ public:
     conference();
     void print_conference();
     void get_conference(std::string, std::string, std::string, date, date, std::string);
+    unsigned get_minute();
 };
 

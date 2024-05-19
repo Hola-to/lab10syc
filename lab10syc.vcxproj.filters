@@ -50,6 +50,9 @@
     <ClCompile Include="theme.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="filter.cpp">
+      <Filter>main files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="data.txt">

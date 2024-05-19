@@ -9,5 +9,7 @@ protected:
 public:
 	name(std::string, std::string, std::string);
 	void get_fname(std::string, std::string, std::string);
+	name get_name();
+	bool operator == (const name& name);
 };
 

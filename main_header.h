@@ -4,4 +4,5 @@
 #include <Windows.h>
 #include <fstream>
 using namespace std;
-//void read_file(const std::string* file_name, conference *conferences[], size_t& id);
+void find_str(conference* con[], const name full_name, size_t count);
+void find_minute(conference* con[], date some_minute, size_t count);

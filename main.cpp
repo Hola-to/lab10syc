@@ -17,7 +17,7 @@ int main()
 	string f_name, l_name, m_name, s_topic;
 	char tmp[100];
 	date s_start, s_end;
-	//(id, f_name, l_name, m_name, s_start, s_end, s_topic)
+	name some_name("Иванов", "Иван", "Иванович");
 	while (!in_put.eof())
 	{
 		in_put >> f_name;
@@ -29,10 +29,13 @@ int main()
 		s_end = s_start.convert(tmp);
 		in_put >> s_topic;
 		in_put.read(tmp, 1);
-		conference temp(id, f_name, l_name, m_name, s_start, s_end, s_topic);
-		conferences[id] = &temp;
+		conference *temp = new conference(id, f_name, l_name, m_name, s_start, s_end, s_topic);
+		conferences[id] = temp;
 		conferences[id++]->print_conference();
 	}
 	in_put.close();
+	find_str(conferences, some_name, id);
+	date some_date(0, 15);
+	find_minute(conferences, some_date, id);
 	return 0;
 }

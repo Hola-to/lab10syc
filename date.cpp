@@ -22,3 +22,4 @@ date date::convert(char* str)
     result.minutes = atoi(str_number);
     return result;
 }
+
