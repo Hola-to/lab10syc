@@ -1,7 +1,7 @@
 #pragma once
 class date
 {
-protected:
+public:
 	unsigned hours;
 	unsigned minutes;
 public:

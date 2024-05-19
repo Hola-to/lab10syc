@@ -1,5 +1,6 @@
 #include "date.h"
 #include <iostream>
+#pragma warning(disable: 4996)
 date::date(unsigned s_hours, unsigned s_minutes)
 {
 	this->hours = s_hours;
@@ -15,9 +16,9 @@ date date::convert(char* str)
 {
     date result;
     char* context = NULL;
-    char* str_number = strtok_s(str, ":", &context);
-    result.hours = 8;
-    str_number = strtok_s(NULL, ":", &context);
-    result.minutes = 9;
+    char* str_number = strtok(str, ":");
+    result.hours = atoi(str_number);
+    str_number = strtok(NULL, ":");
+    result.minutes = atoi(str_number);
     return result;
 }

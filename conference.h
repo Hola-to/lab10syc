@@ -11,9 +11,9 @@ private:
     date start;
     date end;
 public:
-    conference(size_t, string, string, string, date, date, string);
+    conference(size_t, std::string, std::string, std::string, date, date, std::string);
     conference();
     void print_conference();
-    void get_conference(string, string, string, date, date, string);
+    void get_conference(std::string, std::string, std::string, date, date, std::string);
 };
 
