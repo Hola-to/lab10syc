@@ -1,4 +1,5 @@
 #include "main_header.h"
+#include <string>
 void read_file(const char* file_name, conference* conferences[], size_t& id)
 {
 	ifstream in_put;
@@ -8,14 +9,14 @@ void read_file(const char* file_name, conference* conferences[], size_t& id)
 		cerr << "Файл не открыт или не существует";
 		return;
 	}
-	char f_name, l_name, m_name, s_topic;
-	char tmp[CHAR_MAX];
+	string f_name, l_name, m_name, s_topic;
+	char tmp[100];
 	date s_start, s_end;
 	//(id, f_name, l_name, m_name, s_start, s_end, s_topic)
 	while (!in_put.eof())
 	{
 		conference* temp = new conference;
-		in_put >> f_name;
+		getline(in_put, f_name);
 		in_put >> l_name;
 		in_put >> m_name;
 		in_put >> tmp;

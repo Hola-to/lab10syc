@@ -1,12 +1,13 @@
 #pragma once
+#include <iostream>
 class name
 {
 protected:
-	char first_name;
-	char last_name;
-	char patronymic;
+	std::string first_name;
+	std::string last_name;
+	std::string patronymic;
 public:
-	name(char, char, char);
-	void get_fname(char, char, char);
+	name(std::string, std::string, std::string);
+	void get_fname(std::string, std::string, std::string);
 };
 

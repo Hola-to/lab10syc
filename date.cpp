@@ -6,10 +6,10 @@ date::date(unsigned s_hours, unsigned s_minutes)
 	this->minutes = s_minutes;
 }
 date::date() {}
-void date::get_fdata(char s_hours, char s_minutes)
+void date::get_fdata(unsigned s_hours, unsigned s_minutes)
 {
-	this->hours = std::atoi(&s_hours);
-	this->minutes = std::atoi(&s_minutes);
+    this->hours = s_hours;
+    this->minutes = s_minutes;
 }
 date date::convert(char* str)
 {

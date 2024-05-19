@@ -2,6 +2,7 @@
 #include "date.h"
 #include "name.h"
 #include "theme.h"
+using namespace std;
 class conference :
     public name, public theme
 {
@@ -10,9 +11,9 @@ private:
     date start;
     date end;
 public:
-    conference(size_t, char, char, char, date, date, char);
+    conference(size_t, string, string, string, date, date, string);
     conference();
     void print_conference();
-    void get_conference(size_t, char, char, char, date, date, char);
+    void get_conference(string, string, string, date, date, string);
 };
 

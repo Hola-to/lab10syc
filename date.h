@@ -7,7 +7,7 @@ protected:
 public:
 	date(unsigned, unsigned);
 	date();
-	void get_fdata(char, char);
+	void get_fdata(unsigned, unsigned);
 	date convert(char* str);
 };
 

@@ -4,4 +4,4 @@
 #include <Windows.h>
 #include <fstream>
 using namespace std;
-void read_file(const char* file_name, conference *conferences[], size_t& id);
+//void read_file(const char* file_name, conference *conferences[], size_t& id);

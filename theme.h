@@ -1,10 +1,11 @@
 #pragma once
+#include <iostream>
 class theme
 {
 protected:
-	char topic;
+	std::string topic;
 public:
-	theme(char);
-	void get_ftheme(char);
+	theme(std::string);
+	void get_ftheme(std::string);
 };
 

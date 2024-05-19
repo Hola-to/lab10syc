@@ -1,6 +1,6 @@
 #include "conference.h"
 #include <iostream>
-conference::conference(size_t id, char first_name, char last_name, char patronymic, date start, date end, char topic):
+conference::conference(size_t id, string first_name, string last_name, string patronymic, date start, date end, string topic):
 	name(first_name, last_name, patronymic), theme(topic)
 {
 	this->id = id;
@@ -14,11 +14,10 @@ conference::conference(size_t id, char first_name, char last_name, char patronym
 conference::conference():name(first_name, last_name, patronymic), theme(topic) {}
 void conference::print_conference()
 {
-	printf("%u %c %c %c %c", id, first_name, last_name, patronymic, topic);
+	printf("%u %s %s %s %s", id, first_name, last_name, patronymic, topic);
 }
-void conference::get_conference(size_t id, char first_name, char last_name, char patronymic, date start, date end, char topic)
+void conference::get_conference(string first_name, string last_name, string patronymic, date start, date end, string topic)
 {
-	this->id = id;
 	this->first_name = first_name;
 	this->last_name = last_name;
 	this->patronymic = patronymic;

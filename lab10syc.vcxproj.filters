@@ -44,9 +44,6 @@
     <ClCompile Include="main.cpp">
       <Filter>main files</Filter>
     </ClCompile>
-    <ClCompile Include="read_file.cpp">
-      <Filter>main files</Filter>
-    </ClCompile>
     <ClCompile Include="main_header.h">
       <Filter>main files</Filter>
     </ClCompile>

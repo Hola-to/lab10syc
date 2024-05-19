@@ -138,7 +138,6 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="main_header.h" />
     <ClCompile Include="name.cpp" />
-    <ClCompile Include="read_file.cpp" />
     <ClCompile Include="theme.cpp" />
   </ItemGroup>
   <ItemGroup>
