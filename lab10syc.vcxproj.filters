@@ -59,4 +59,9 @@
       <Filter>Файлы ресурсов</Filter>
     </Text>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="Image.jpg">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+  </ItemGroup>
 </Project>
