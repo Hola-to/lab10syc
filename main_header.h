@@ -3,5 +3,6 @@
 #include <iostream>
 #include <Windows.h>
 #include <fstream>
+#include "conference.h"
 using namespace std;
-//void read_file(const std::string* file_name, conference *conferences[], size_t& id);
+void find_str(conference* con[], const name, size_t count);

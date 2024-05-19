@@ -29,10 +29,15 @@ int main()
 		s_end = s_start.convert(tmp);
 		in_put >> s_topic;
 		in_put.read(tmp, 1);
-		conference temp(id, f_name, l_name, m_name, s_start, s_end, s_topic);
+		name full_name(f_name, l_name, m_name);
+		theme some_topic(s_topic);
+		conference temp(id, full_name, s_start, s_end, some_topic);
 		conferences[id] = &temp;
 		conferences[id++]->print_conference();
 	}
+	const name f_str("Иванов", "Иван", "Иванович");
+	id--;
+	find_str(conferences, f_str, id);
 	in_put.close();
 	return 0;
 }
